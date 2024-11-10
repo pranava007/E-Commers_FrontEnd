@@ -40,7 +40,7 @@ const Home = () => {
         </div>
         <br />
 
-        <h1 className="text-2xl flex justify-center">Your Foverte Furniture</h1>
+        <h1 className="text-2xl flex justify-center">Your Foverte Tablets</h1>
 
         <br />
         <div className="flex justify-center">
