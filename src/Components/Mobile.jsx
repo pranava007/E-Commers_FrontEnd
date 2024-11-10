@@ -4,6 +4,10 @@ import { Carousel } from "flowbite-react";
 
 
 
+
+const Mobile = () => {
+
+  
 let start = <svg
 className="h-5 w-5 text-yellow-300"
 fill="currentColor"
@@ -59,7 +63,7 @@ let data = [
     },
   ];
 
-const Mobile = () => {
+
   return (
 
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">

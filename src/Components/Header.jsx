@@ -22,6 +22,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 
 
+
 const Header = () => {
 
   const [currentUser,setCurrentUser] = useState(true)
@@ -132,10 +133,35 @@ const Header = () => {
   
       {/* Profile Icon */}
       {currentUser === true ? (
-        <div className="flex flex-wrap gap-2">
-          {/* <Avatar img="/images/people/profile-picture-5.jpg" rounded bordered /> */}
-          <Avatar placeholderInitials='JJ' rounded bordered color="gray" />
-        </div>
+        // <div className="flex flex-wrap gap-2">
+        //   {/* <Avatar img="/images/people/profile-picture-5.jpg" rounded bordered /> */}
+        //   <Avatar placeholderInitials='JJ' rounded bordered color="gray" />
+        // </div>
+      <>
+
+<Dropdown
+        arrowIcon={false}
+        inline
+        label={
+          <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
+        }
+      >
+        <Dropdown.Header>
+          <span className="block text-sm">Bonnie Green</span>
+          <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+        </Dropdown.Header>
+        <Dropdown.Item>Dashboard</Dropdown.Item>
+        <Dropdown.Item>Settings</Dropdown.Item>
+        <Dropdown.Item>Earnings</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item>Sign out</Dropdown.Item>
+      </Dropdown>
+    
+      
+      
+      
+      
+      </>
       ) : (
         <Button className="ml-4">Sign-In</Button>
       )}

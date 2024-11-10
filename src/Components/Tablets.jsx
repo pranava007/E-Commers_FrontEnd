@@ -3,7 +3,10 @@ import React from 'react'
 import { Carousel } from "flowbite-react";
 
 
-let start = <svg
+
+
+const Tablets = () => {
+  let start = <svg
 className="h-5 w-5 text-yellow-300"
 fill="currentColor"
 viewBox="0 0 20 20"
@@ -58,7 +61,7 @@ let data = [
     },
   ];
 
-const Tablets = () => {
+
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 ">
     {data.map((item, index) => {
