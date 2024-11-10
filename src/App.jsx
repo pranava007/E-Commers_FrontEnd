@@ -17,6 +17,7 @@ import Headphones from './Components/Headphones.JSX'
 import Tvs from './Components/Tvs'
 import Camera from './Components/Camera'
 import Smarthome from './Components/Smarthome'
+import Filter from './Components/Filter'
 
 
 
@@ -33,6 +34,7 @@ function App() {
     <br />
     <Menu/>
     <br />
+    <Filter/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/signup' element={<SignUpForm/>}/>

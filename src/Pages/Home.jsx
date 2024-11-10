@@ -4,12 +4,14 @@ import Loptop from "../Components/Loptop";
 import Mobile from "../Components/Mobile";
 import Tablets from "../Components/Tablets";
 import CricleProductUi from "../Components/CricleProductUi";
+// import Filter from "../Components/Filter";
 
 
 //Filter nav and Cart nav
 const Home = () => {
   return (
     <>
+     
       <Carou />
       <div className="text-center">
         <h1 className=" mt-5 pacifico-regular text-2xl ">List of Products</h1>

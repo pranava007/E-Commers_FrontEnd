@@ -6,6 +6,7 @@ const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menu = [
+    { name: 'All', link: '/' },
     { name: 'Mobile', link: '/mobile' },
     { name: 'Laptop', link: '/laptop' },
     { name: 'Tablets', link: '/tablet' },
