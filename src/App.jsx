@@ -7,6 +7,7 @@ import SignUpForm from './Pages/Auth/SignUpForm'
 import SignInForm from './Pages/Auth/SignInForm'
 import ForgetPasswordForm from './Pages/Auth/ForgetPasswordForm'
 import ResetPasswordForm from './Pages/Auth/ResetPasswordForm'
+import Menu from './Components/Menu'
 
 
 
@@ -19,7 +20,9 @@ function App() {
     <BrowserRouter>
 
     <Header/>
-    
+    <br />
+    <Menu/>
+    <br />
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/signup' element={<SignUpForm/>}/>
